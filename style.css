@@ -1,0 +1,200 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+  background-color: #eef0f4;
+  transition: all 1s cubic-bezier(0.86, 0, 0.07, 1);
+  background-color: #f0ecff;
+}
+h1 {
+  margin-bottom: 2rem;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 320px;
+  margin: 30px auto;
+  border: 6px #2b283a solid;
+  border-radius: 10px;
+  padding: 2rem;
+  transition: all 1s cubic-bezier(0.86, 0, 0.07, 1);
+  background-color: #eff2f4;
+  /* box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px,
+      rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px,
+      rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px,
+      rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px,
+      rgb(255, 85, 85) 40px -40px; */
+}
+.actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+img {
+  width: 150px;
+  margin: 0 auto;
+}
+
+input {
+  color: #432000;
+  background-color: #dce1eb;
+  border: 0;
+  padding: 5% 8.4%;
+  border-radius: 8px;
+  font-size: 20px;
+  text-align: center;
+  font-family: "krub", sans-serif;
+  margin: 40px 0px 10px 0px;
+  transition: all 1s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+#Add-button {
+  color: #fdfdfd !important;
+  background-color: #ac485a !important;
+  border: 0;
+  padding: 5% 27.5% !important;
+  border-radius: 8px;
+  font-size: 20px;
+  text-align: center;
+  font-family: "krub", sans-serif;
+  cursor: pointer;
+  transition: all 1s cubic-bezier(0.86, 0, 0.07, 1);
+  margin-bottom: 1rem;
+}
+.ul-div ul {
+  display: block !important;
+  text-align: left !important;
+  /* margin-left: 20rem; */
+}
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-family: "krub", sans-serif !important;
+}
+#Add-button:hover {
+  background-color: #8c3650;
+  transition: all 1s cubic-bezier(0.86, 0, 0.07, 1);
+}
+/* Add this to your existing CSS */
+
+/* Responsive Styles for 200px width */
+@media screen and (max-width: 431px) {
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-family: "krub", sans-serif !important;
+  }
+}
+
+@media screen and (max-width: 322px) {
+  .container {
+    max-width: 250px;
+    padding: 1.4rem;
+  }
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-family: "krub", sans-serif !important;
+  }
+  input {
+    padding: 3% 7%;
+    font-size: 15px;
+  }
+
+  button {
+    padding: 3% 28%;
+    font-size: 15px;
+  }
+}
+/* .ul-div {
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 1rem;
+} */
+
+.shopping-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.shopping-list li {
+  background-color: #e0e0e0; /* Lighter grey background color for list items */
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 3px;
+  margin-bottom: 10px !important;
+}
+.shopping-list li:hover {
+  background-color: #d8d8d8;
+  transition: all 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+  cursor: pointer;
+}
+.list-item {
+  display: flex;
+  justify-content: space-between;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #2b283a;
+  padding: 35px 40px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  border-radius: 20px;
+  transition: all 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.popup-content {
+  text-align: center;
+  color: #dce1eb;
+  position: relative;
+}
+
+.close {
+  color: #f50000;
+  /* float: right; */
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+  left: -6%;
+  top: -52%;
+}
+
+.close:hover {
+  color: rgb(255, 255, 255);
+}
+
+#cancelDelete,
+#confirmDelete {
+  margin: 10px;
+  padding: 10px 30px !important;
+  cursor: pointer;
+  background-color: #dce1eb !important;
+  border: none !important;
+  outline: none !important;
+  border-radius: 10px;
+  color: #080808 !important;
+}
+#cancelDelete:hover,
+#confirmDelete:hover {
+  background-color: #ac485a !important;
+  transition: all 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+
+  color: #f0f0f0 !important;
+}
